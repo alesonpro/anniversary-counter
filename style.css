@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff4c9d 0%, #3a3a3a 100%); /* Pink to dark gradient */
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  .container {
+    background: #2d2d2d; /* Dark container background */
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 100%; /* Make sure it fits on all screens */
+    max-width: 500px; /* Limit the width to prevent horizontal scroll */
+    box-sizing: border-box; /* Include padding in the total width */
+  }
+  
+  h1 {
+    color: #ff4c9d; /* Pink heading */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #fff; /* White description text */
+  }
+  
+  .counter {
+    display: flex;
+    flex-direction: column; /* Stack the time boxes vertically */
+    gap: 20px;
+  }
+  
+  .time-box {
+    background: #333333; /* Dark background for time boxes */
+    border-radius: 12px;
+    padding: 15px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .time-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4c9d; /* Pink for the numbers */
+  }
+  
+  .time-box label {
+    font-size: 1rem;
+    color: #fff; /* White text for the labels */
+  }
+  
+  /* Remove animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .time-box span {
+      font-size: 1.5rem;
+    }
+  
+    .time-box label {
+      font-size: 0.8rem;
+    }
+  
+    .container {
+      padding: 20px 15px; /* Reduce padding on small screens */
+    }
+  }
+  
